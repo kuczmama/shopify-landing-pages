@@ -41,7 +41,6 @@
 /></noscript>
 <!-- End Facebook Pixel Code -->
 
-</head>
 <style>
 * {
   box-sizing: border-box;
@@ -247,6 +246,8 @@ body {
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"/>
 <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400,400italic,700,700italic" type="text/css" rel="stylesheet"/>
 <link href="css/skins-velvet.css" rel="stylesheet"/>
+</head>
+<body>
 <div>
   <div id="page-container" class="bbm page-container-preview">
     <section id="block-7a2963d472a08aa6" class="sec-header22 sec-dark grid-fixed cols-center-xs">
@@ -988,3 +989,11 @@ body {
   <div id="page-popups" class="bbm page-popups">
   </div>
 </div>
+<script>
+  window.onload = function() {
+    document.getElementById('mc-embedded-subscribe').addEventListener("click", function() {
+        fbq('track', 'Lead');
+      });
+  };
+</script>
+</body>
